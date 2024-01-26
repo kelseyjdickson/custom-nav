@@ -1,4 +1,8 @@
-import PropTypes from "prop-types";
+import className from "classnames";
+
+const finalClassName = className({
+  "bg-blue-500": true,
+});
 
 const Button = ({
   children,
