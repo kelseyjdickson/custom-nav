@@ -1,34 +1,26 @@
-import { GoBell, GoCloudDownload } from "react-icons/go";
-import Button from "./Button";
+import Accordion from "./components/Accordion";
 
 const App = () => {
+  const items = [
+    {
+      id: "askdhf",
+      label: "Can I use react on projects?",
+      content: "Yes, you can!",
+    },
+    {
+      id: "cool",
+      label: "Am I tired?",
+      content: "Yes, you can!",
+    },
+    {
+      id: "nice",
+      label: "Can I eat mustard?",
+      content: "Yes, you can!",
+    },
+  ];
   return (
     <div>
-      <div>
-        <Button success danger outline>
-          <GoBell />
-          Test1
-        </Button>
-      </div>
-      <div>
-        <Button warning>
-          <GoCloudDownload />
-          Test2
-        </Button>
-      </div>
-      <div>
-        <Button secondary outline>
-          Test3
-        </Button>
-      </div>
-      <div>
-        <Button secondary rounded>
-          Test4
-        </Button>
-      </div>
-      <div>
-        <Button primary>Test5</Button>
-      </div>
+      <Accordion items={items} />
     </div>
   );
 };
