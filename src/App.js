@@ -5,17 +5,17 @@ const App = () => {
     {
       id: "askdhf",
       label: "Can I use react on projects?",
-      content: "Yes, you can!",
+      content: "0",
     },
     {
       id: "cool",
       label: "Am I tired?",
-      content: "Yes, you can!",
+      content: "1",
     },
     {
       id: "nice",
       label: "Can I eat mustard?",
-      content: "Yes, you can!",
+      content: "2",
     },
   ];
   return (
