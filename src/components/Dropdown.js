@@ -35,13 +35,13 @@ const Dropdown = ({ options, value, onChange }) => {
 
   let renderedOptions = options.map((option) => {
     return (
-      <Panel
+      <div
         className="hover:bg-sky-100 rounder cursor-pointer p1"
         onClick={() => handleOptionClick(option)}
         key={option.value}
       >
-        {option.value}
-      </Panel>
+        {option.label}
+      </div>
     );
   });
 
